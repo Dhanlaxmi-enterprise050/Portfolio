@@ -4,14 +4,21 @@ import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 
-const experiences = [
+const experiences: Array<{
+  id: number
+  title: string
+  company: string
+  period: string
+  description: string
+  side: 'left' | 'right'
+}> = [
   {
     id: 1,
     title: 'Frontend Developer (Self-Taught)',
     company: 'Independent Learning',
     period: '2024 – Present',
     description: 'Building modern, responsive websites using React, Next.js, Tailwind, and Framer Motion. Focused on clean design, fast performance, and smooth UI/UX.',
-    side: 'left',
+    side: 'left' as const,
   },
   {
     id: 2,
@@ -19,7 +26,7 @@ const experiences = [
     company: 'Self-Employed',
     period: '2024 – Present',
     description: 'Creating custom websites for students, creators, and local businesses. Handling full workflow — planning, designing, building, deploying, and delivering fast premium results.',
-    side: 'right',
+    side: 'right' as const,
   },
   {
     id: 3,
@@ -27,7 +34,7 @@ const experiences = [
     company: 'SaaS Product',
     period: '2024 – Present',
     description: 'Developing a premium bio-link generator for influencers and small businesses. Designing templates, automating workflows, and building a scalable product ecosystem.',
-    side: 'left',
+    side: 'left' as const,
   },
   {
     id: 4,
@@ -35,42 +42,48 @@ const experiences = [
     company: 'Creative Experiments',
     period: '2025 – Present',
     description: 'Experimenting, building, and learning by shipping projects, including: Portfolio & landing page generators, a custom self-discipline app inspired by Hanuman bhakti, smooth animated portfolio templates, DIY RamSitaPod audio device, and large-scale Minecraft builds (Ayodhya Nagri challenge). Developed strong problem-solving skills, creativity, and UI/UX understanding.',
-    side: 'right',
+    side: 'right' as const,
   },
 ]
 
-const achievements = [
+const achievements: Array<{
+  id: number
+  title: string
+  period: string
+  side: 'left' | 'right'
+  description?: string
+}> = [
   {
     id: 1,
     title: 'Selected for School U-14 Football Trials',
     period: '2025',
-    side: 'left',
+    side: 'left' as const,
   },
   {
     id: 2,
     title: 'Built multiple client websites before turning 14',
     period: '2024',
-    side: 'right',
+    side: 'right' as const,
   },
   {
     id: 3,
     title: 'Creating a SaaS product using AI tools like Cursor + ChatGPT',
     period: '2024 – Present',
-    side: 'left',
+    side: 'left' as const,
   },
   {
     id: 4,
     title: 'Rebuilt Ayodhya Nagri in Minecraft Survival Mode',
     period: 'Long-term Project',
     description: 'Large-scale creative build as a long-term project',
-    side: 'right',
+    side: 'right' as const,
   },
   {
     id: 5,
     title: 'Consistently learning & improving',
     period: 'Ongoing',
     description: 'Daily coding, design, and building challenges',
-    side: 'left',
+    side: 'left' as const,
   },
 ]
 
