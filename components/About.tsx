@@ -59,19 +59,19 @@ export default function About() {
           About Me
         </motion.h2>
 
-        <div className="grid md:grid-cols-2 gap-8 items-start">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-start">
           {/* Bio Card with Glassmorphism */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="glass rounded-3xl p-8 md:p-10 premium-shadow"
+            className="glass rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 premium-shadow"
           >
-            <p className="text-lg sm:text-xl text-gray-300 leading-relaxed mb-6 font-light">
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 dark:text-gray-300 light:text-gray-700 leading-relaxed mb-4 sm:mb-6 font-light">
             I’m a frontend developer obsessed with clean design, smooth animations, and building things that look way more expensive than they are. I create modern websites for businesses, creators, and students—fast, responsive, and premium.
             </p>
-            <p className="text-lg sm:text-xl text-gray-300 leading-relaxed font-light">
-Right now I’m focused on leveling up my skills, shipping projects, and building digital products that actually solve problems. I love working alone, thinking creatively, and pushing myself to get better with every build.
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 dark:text-gray-300 light:text-gray-700 leading-relaxed font-light">
+              Right now I'm focused on leveling up my skills, shipping projects, and building digital products that actually solve problems. I love working alone, thinking creatively, and pushing myself to get better with every build.
             </p>
           </motion.div>
 
@@ -81,18 +81,18 @@ Right now I’m focused on leveling up my skills, shipping projects, and buildin
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <h3 className="text-2xl sm:text-3xl font-semibold mb-6">Skills & Technologies</h3>
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6">Skills & Technologies</h3>
             <motion.div
               variants={containerVariants}
               initial="hidden"
               animate={isInView ? 'visible' : 'hidden'}
-              className="flex flex-wrap gap-3"
+              className="flex flex-wrap gap-2 sm:gap-3"
             >
               {skills.map((skill, index) => (
                 <motion.div
                   key={skill}
                   variants={itemVariants}
-                  className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm sm:text-base hover:bg-accent-blue/20 hover:border-accent-blue transition-all duration-300 cursor-default"
+                  className="px-3 sm:px-4 py-1.5 sm:py-2 bg-white/5 dark:bg-white/5 light:bg-black/5 border border-white/10 dark:border-white/10 light:border-black/10 rounded-full text-xs sm:text-sm md:text-base hover:bg-accent-blue/20 hover:border-accent-blue transition-all duration-300 cursor-default"
                 >
                   {skill}
                 </motion.div>
