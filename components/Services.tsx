@@ -251,9 +251,13 @@ function ServiceCard({
       variants={variants}
       className="group relative glass rounded-2xl p-6 sm:p-8 premium-shadow-hover hover:border-accent-blue/50 transition-all duration-500 flex flex-col h-full"
     >
-      {/* Icon */}
-      <div className="text-accent-blue mb-4 group-hover:scale-110 transition-transform duration-300">
-        {service.icon}
+      {/* Icon with Circular Background */}
+      <div className="mb-6 flex items-center justify-center">
+        <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-accent-blue/20 to-accent-blue-light/20 dark:from-accent-blue/20 dark:to-accent-blue-light/20 light:from-accent-blue/10 light:to-accent-blue-light/10 border border-accent-blue/30 dark:border-accent-blue/30 light:border-accent-blue/20 flex items-center justify-center group-hover:scale-110 group-hover:bg-gradient-to-br group-hover:from-accent-blue/30 group-hover:to-accent-blue-light/30 transition-all duration-300">
+          <div className="text-accent-blue dark:text-accent-blue light:text-accent-blue group-hover:scale-110 transition-transform duration-300">
+            {service.icon}
+          </div>
+        </div>
       </div>
 
       {/* Title */}
