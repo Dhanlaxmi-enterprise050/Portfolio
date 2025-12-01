@@ -147,7 +147,7 @@ npm start
 
 ## 📝 Notes
 
-- Form submission is not implemented (frontend structure only as requested)
+- Form submission is not implemented (frontend structure only)
 - All project images use placeholder URLs - replace with your actual project images
 - Social media links are placeholder URLs - update with your actual profiles
 - Email link in Contact section needs your actual email address
