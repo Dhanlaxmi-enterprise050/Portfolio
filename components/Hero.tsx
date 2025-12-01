@@ -151,6 +151,15 @@ export default function Hero() {
         </motion.p>
 
         <motion.p
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
+  className="text-sm sm:text-base md:text-lg text-gray-400 dark:text-gray-400 light:text-gray-600 mb-4 font-light px-2"
+>
+  Self-taught 14-year-old frontend developer from India.
+</motion.p>
+
+        <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: 'easeOut' }}
