@@ -68,10 +68,10 @@ export default function About() {
             className="glass rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 premium-shadow"
           >
             <p className="text-base sm:text-lg md:text-xl text-gray-300 dark:text-gray-300 light:text-gray-700 leading-relaxed mb-4 sm:mb-6 font-light">
-            I’m a frontend developer obsessed with clean design, smooth animations, and building things that look way more expensive than they are. I create modern websites for businesses, creators, and students—fast, responsive, and premium.
+            I’m a 14-year-old frontend developer obsessed with clean design, smooth animations, and building things that look way more expensive than they are. I create modern websites for businesses, creators, and students—fast, responsive, and premium.
             </p>
             <p className="text-base sm:text-lg md:text-xl text-gray-300 dark:text-gray-300 light:text-gray-700 leading-relaxed font-light">
-              Right now I'm focused on leveling up my skills, shipping projects, and building digital products that actually solve problems. I love working alone, thinking creatively, and pushing myself to get better with every build.
+              Even though I’m still in school, I’ve already built websites for students, creators, and local businesses. Right now I'm focused on leveling up my skills, shipping projects, and building digital products that actually solve problems. I love working alone, thinking creatively, and pushing myself to get better with every build.
             </p>
           </motion.div>
 
