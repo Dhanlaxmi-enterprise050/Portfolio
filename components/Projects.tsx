@@ -21,8 +21,8 @@ const projects = [
     description: 'An intuitive task management application with real-time collaboration features.',
     tech: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
     image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop',
-    liveUrl: '#',
-    codeUrl: '#',
+    liveUrl: 'to-do7.vercel.app',
+    codeUrl: 'https://github.com/Dhanlaxmi-enterprise050/to-do',
   },
   {
     id: 3,
